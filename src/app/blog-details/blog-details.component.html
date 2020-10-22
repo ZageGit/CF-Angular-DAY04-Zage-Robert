@@ -2,8 +2,8 @@
 <h1 class="display-4 mb-4">{{blog.heading}}</h1>
 <img src="{{blog.image}}" class="img-fluid" alt="{{blog.name}}">
 </div>
-<div>
-    <p class="text-justify p-4"> {{blog.text}}</p></div>
+<div id="blogtext"class="container mt-2">
+    <p class="text-justify p-4"> {{blog.text}}</p>
     <blockquote class="blockquote text-center">
         <p class="mb-0">{{blog.quote}}</p>
         <footer class="blockquote-footer">{{blog.place}} <cite title="Source Title">{{blog.date}}</cite><cite title="Source Title">{{blog.time}}</cite></footer>
@@ -15,6 +15,7 @@
 <textarea name="" id="" cols="150" rows="5"></textarea>
 
 <button type="button" class="btn btn-primary mt-2">Comment</button>
+</div>
 </div>
 
 
