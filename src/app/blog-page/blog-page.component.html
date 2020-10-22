@@ -1,16 +1,13 @@
-<div class="container">
+<div class="container bg-secondary p-4">
     <h2 class="mt-4 text-light">Blogs</h2>
     <div class="row mt-4">
     <div class="col-4" *ngFor="let blog of blogs ; index as blogId">
-        <div class="productdetails m-2 border p-4">
+        <div class="productdetails m-2 border p-4 bg-light">
      <h3>
        <a [routerLink]="['/blogs', blogId]">
          {{ blog.heading }}
        </a>
      </h3>
-     <p *ngIf="blog.text">
-    {{ blog.text }}
-     </p>
      <img class="img-fluid"src="{{blog.image}}" alt=" {{blog.name}} ">
      <div class="text-center mt-2">
      <button type="button" class="btn btn-success" [routerLink]="['/blogs', blogId]" >More Info</button>
@@ -21,3 +18,5 @@
     </div>
     </div>
     </div>
+
+
